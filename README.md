@@ -46,7 +46,7 @@ Algorithm.
 
 5. Simple assembly and setup of the final controller using standardized hardware. 
 
-6. Total Cost =< $100 for a complete set up with 2 probes
+6. Total Cost <= $100 for a complete set up with 2 probes
 
 Extra Goals:
 -Texting alerts?
