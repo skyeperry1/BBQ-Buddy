@@ -33,7 +33,7 @@ Barbecuing is a fine mix of science, art, and devotion. Smoking a great rack of 
 
 Ib. Goals
 ******************
-The goal of the project is to re-design an open-source BBQ controller that includes the functionality of the top-end commercial controllers at half of the cost of the leading open source BBQ controller, The HeaterMeter($182 build cost + 1 probe). This can be accomplished by using a combination of newer hardware and simplifying the software. The main goals are:
+The goal of the project is to re-design an open-source BBQ controller that includes the functionality of the top-end commercial controllers at half of the cost of the leading open source BBQ controller.. This can be accomplished by using a combination of newer hardware and simplifying the software. The main goals are:
 
 1. Control the temperature of the BBQ via blower fan and PID
 Algorithm.
