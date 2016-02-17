@@ -129,11 +129,20 @@ a:hover {border-bottom:1px dashed}\n\
 </style>\n\
 </head>\n\
 <body>\n\
-<h1>Temperature somewhere</h1>\n\
+<h1>BBQ-Buddy</h1>\n\
+<h2>Open Source BBQ Controller & Monitor</h2>\n\
 <p>Pit Temperature<br /><strong class="out" style="color:rgb(' + colourScale(lastPitTemp) + ')">' +
-	(Math.round(lastPitTemp * 10) / 10.0) + '°C</strong></p>\n\
-<p>Indoor<br /><strong class="in" style="color:rgb(' + colourScale(lastProbe1Temp) + ')">' +
-	(Math.round(lastProbe1Temp * 10) / 10.0) + '°C</strong></p>\n\
+	(Math.round(lastPitTemp * 10) / 10.0) + '°F</strong></p>\n\
+<p>Probe 1<br /><strong class="in" style="color:rgb(' + colourScale(lastProbe1Temp) + ')">' +
+	(Math.round(lastProbe1Temp * 10) / 10.0) + '°F</strong></p>\n\
+<p>Probe 2<br /><strong class="in" style="color:rgb(' + colourScale(lastProbe1Temp) + ')">' +
+	(Math.round(lastProbe2Temp * 10) / 10.0) + '°F</strong></p>\n\
+<p>Fan Speed<br /><strong class="out" style="color:white">' +
+	(Math.round(lastFanSpeed * 10) / 10.0) + '%</strong></p>\n\
+<p>Lid Status<br /><strong class="out" style="color:white">' +
+	if((Math.round(lastLidStatus * 10) / 10.0)){
+		"Open!"
+	} else {"Closed!"} + '</strong></p>\n\
 <p>' + dateLastInfo.toISOString() + '</p>\n\
 <p class="r"><a href="https://github.com/skyeperry1/BBQ-Buddy" title="Built on">BBQ Buddy</a></p>\n\
 </body>\n\
@@ -144,3 +153,4 @@ a:hover {border-bottom:1px dashed}\n\
 }
 
 module.exports.temperatureResponse = temperatureResponse;
+
